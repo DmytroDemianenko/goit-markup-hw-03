@@ -7,19 +7,14 @@
   --title-color: #212121;
   --button-background: #f5f4fa;
   --button-background-active: #2196f3;
+  --back-hero-footer: #2f303a;
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.container {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
+
 ul {
   list-style: none;
 }
@@ -32,10 +27,6 @@ a:active {
   color: var(--active-color);
 }
 
-p {
-  color: var(--text-color);
-  font-family: var(--main-font);
-}
 h2,
 h3 {
   color: var(--title-color);
@@ -51,8 +42,15 @@ body {
   line-height: 1.714em;
   letter-spacing: 0.03em;
 }
-
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
 /* heder styles */
+.container {
+}
 .logo {
   color: #2196f3;
 }
@@ -76,14 +74,25 @@ body {
   font-size: 14px;
   line-height: 1.43em;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-list-link {
+  display: flex;
+  flex-direction: row;
 }
 .nav-link {
   color: var(--title-color);
 }
-
+.nav-list-contacts {
+  padding-top: 32px;
+  display: flex;
+}
 /* Section Hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--back-hero-footer);
   height: 600px;
   padding: 200 auto 280;
 }
@@ -96,7 +105,6 @@ body {
 /* Section container advantages */
 .caption-title {
   font-weight: 700;
-
   line-height: 1.142em;
   letter-spacing: 0.03em;
   color: var(--title-color);
