@@ -84,6 +84,8 @@ h3 {
   display: flex;
   padding-right: 331px;
 }
+.nav-list-site >li:not(:last-child) {
+margin-right: 50px; }
 .nav-link {
   color: var(--title-color);
 }
