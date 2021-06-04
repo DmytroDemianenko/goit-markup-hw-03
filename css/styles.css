@@ -87,7 +87,7 @@ h3 {
 .nav-link {
   color: var(--title-color);
 }
-.nav-link:not(:last-child) {
+.contacts-list:not(:last-child) {
   margin-right: 50px;
 }
 .header {
