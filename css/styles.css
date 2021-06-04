@@ -66,11 +66,11 @@ h3 {
   line-height: 1.92em;
   letter-spacing: 0.03em;
 }
-.nav-list a:hover,
+/*.nav-list a:hover,
 .nav-list a:focus,
 .nav-list .current {
   color: var(--active-color);
-}
+}*/
 .nav-list {
   font-weight: 500;
   font-size: 14px;
@@ -202,8 +202,8 @@ margin-right: 50px; }
   background-color: var(--button-background-active);
   cursor: pointer;
 }
-.link:hover:hover,
-.link:focus:focus {
+.link:hover,
+.link:focus {
   color: var(--active-color);
 }
 
@@ -227,10 +227,10 @@ margin-right: 50px; }
 .footer-list .text {
   font-style: normal;
 }
-.contacts .link {
+*/--.contacts .link {
   font-style: normal;
   color: #ffffff99;
-  font-family: var(--main-font);
+  font-family: var(--main-font);*/
 }
 /* .contacts {
   font-style: normal;
