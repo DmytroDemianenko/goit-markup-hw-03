@@ -9,6 +9,7 @@
   --button-background-active: #2196f3;
   --back-dark: #2f303a;
   --foot-contact-text: rgba(255, 255, 255, 0.6);
+  --back-color-order: #188ce8;
 }
 
 * {
@@ -29,7 +30,6 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0px, 15px;
 }
 ul {
   list-style: none;
@@ -141,14 +141,11 @@ h3 {
 .hero {
   background-color: var(--back-dark);
   height: 600px;
-  padding: 200 auto 280;
-  display: flex;
-  flex-direction: column;
 }
 .main-title {
   color: var(--white-color);
   font-size: 44px;
-  line-height: 1.363em;
+  line-height: 1.36em;
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -163,7 +160,23 @@ h3 {
 .hero pre::first-letter {
   text-transform: uppercase;
 }
-/* Section container advantages */
+.button.order {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88em;
+  color: var(--white-color);
+  background-color: var(--back-color-order);
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+}
+
+.what-we-do {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+/* Section  advantages */
 .caption-title {
   font-weight: 700;
   font-size: 14px;
@@ -173,6 +186,12 @@ h3 {
 }
 .caption-title pre::first-letter {
   text-transform: uppercase;
+}
+.advantages {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 /* Чем мы занимаемся */
 .heading {
@@ -200,17 +219,7 @@ h3 {
   margin-right: auto;
   padding: 0;
 }
-.advantages {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
-.what-we-do {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
+
 .products-list,
 .title {
   font-size: 18px;
@@ -223,6 +232,7 @@ h3 {
   line-height: 1.63;
   color: var(--title-color);
   background-color: var(--button-background);
+  min-width: 73px;
 }
 .button:hover,
 .button:focus {
@@ -250,6 +260,8 @@ h3 {
 .foot {
   background-color: var(--back-dark);
   color: var(--white-color);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .contacts-list-foot > li {
   font-style: normal;
