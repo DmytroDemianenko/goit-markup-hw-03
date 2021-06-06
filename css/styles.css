@@ -11,12 +11,10 @@
   --foot-contact-text: rgba(255, 255, 255, 0.6);
   --back-color-order: #188ce8;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 /* body styles */
 body {
   background-color: var(--white-color);
@@ -30,6 +28,8 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 ul {
   list-style: none;
@@ -44,11 +44,17 @@ h2,
 h3 {
   color: var(--title-color);
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 /* HEDER STYLES */
 .head {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .nav-list {
   display: flex;
@@ -63,9 +69,6 @@ h3 {
 .logo-item {
   color: #000000;
 }
-.logo-item-foot {
-  color: var(--white-color);
-}
 .logo-link {
   font-family: var(--accent-font);
   font-weight: 700;
@@ -75,7 +78,7 @@ h3 {
   margin-right: 94px;
   padding-top: 24px;
   padding-bottom: 25px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
 }
 .nav a:hover,
 .nav a:focus,
@@ -91,7 +94,8 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 32px 0px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts-list {
   line-height: 1.14em;
@@ -102,7 +106,8 @@ h3 {
 .contacts-list-link {
   font-style: normal;
   color: inherit;
-  padding: 32px 0px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts-list-link:hover,
 .contacts-list-link:focus {
@@ -111,32 +116,6 @@ h3 {
 .contacts-list > li:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-list > li:last-child {
-  padding-right: 15px;
-}
-/* 
-.header {
-  display: flex;
-  flex-direction: row;
-  
-  align-items: center;
-}
-.contacts-list {
-  color: inherit;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.contacts-item {
-  color: var(--text-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.contacts-item .link {
-  margin-right: 50px;
-} */
 /* HERO SECTION  */
 .hero {
   background-color: var(--back-dark);
@@ -148,6 +127,15 @@ h3 {
   line-height: 1.36em;
   letter-spacing: 0.06em;
   text-align: center;
+  width: 696px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .main-title,
+.advantages .caption-title {
+  text-transform: uppercase;
 }
 .visual-hiden {
   visibility: hidden;
@@ -156,9 +144,6 @@ h3 {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-.hero pre::first-letter {
-  text-transform: uppercase;
 }
 .button.order {
   display: inline-block;
@@ -170,11 +155,17 @@ h3 {
   letter-spacing: 0.06em;
   padding: 10px 32px;
 }
-
-.what-we-do {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+/* WHAT WE DO */
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.img-list {
+  display: flex;
+  flex-direction: row;
 }
 /* Section  advantages */
 .caption-title {
@@ -187,24 +178,8 @@ h3 {
 .caption-title pre::first-letter {
   text-transform: uppercase;
 }
-.advantages {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
-/* Чем мы занимаемся */
-.heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17em;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
+
 /* Наша команда */
-.our-team {
-  background-color: var(--button-background);
-}
 .team-list > li {
   font-size: 16px;
   line-height: 1.88em;
@@ -212,12 +187,13 @@ h3 {
 .name {
   font-weight: 500;
 }
-
+.item * {
+  outline: 1px solid rebeccapurple;
+}
 /* PORTFOLIO */
 .our-products {
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
 }
 
 .products-list,
@@ -233,6 +209,7 @@ h3 {
   color: var(--title-color);
   background-color: var(--button-background);
   min-width: 73px;
+  border: 0px;
 }
 .button:hover,
 .button:focus {
@@ -260,8 +237,6 @@ h3 {
 .foot {
   background-color: var(--back-dark);
   color: var(--white-color);
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .contacts-list-foot > li {
   font-style: normal;
@@ -272,4 +247,7 @@ h3 {
 .contacts-list-foot a:hover,
 .contacts-list-foot a:focus {
   color: var(--active-color);
+}
+.logo-item-foot {
+  color: var(--white-color);
 }
