@@ -30,6 +30,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 94px;
 }
 ul {
   list-style: none;
@@ -40,9 +41,16 @@ a {
 a:active {
   color: var(--active-color);
 }
+h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   color: var(--title-color);
+  margin: 0;
+}
+p {
   margin: 0;
 }
 img {
@@ -53,6 +61,7 @@ img {
 .head {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
   border-bottom: 1px solid #ececec;
 }
 .nav-list {
@@ -126,7 +135,7 @@ img {
   line-height: 1.36em;
   letter-spacing: 0.06em;
   text-align: center;
-  justify-content: center;
+  justify-content: center;
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -181,12 +190,26 @@ img {
 }
 
 /* Наша команда */
-.team-list > li {
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list > .item {
   font-size: 16px;
   line-height: 1.88em;
+  text-align: center;
+
+  /* flex-basis: calc(100% / 4); */
 }
 .name {
   font-weight: 500;
+  padding-top: 30px;
+}
+.our-team .heading {
+  text-align: center;
 }
 .item * {
   outline: 1px solid rebeccapurple;
