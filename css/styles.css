@@ -30,7 +30,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 94px;
 }
 ul {
   list-style: none;
@@ -86,7 +85,6 @@ img {
   margin-right: 94px;
   padding-top: 24px;
   padding-bottom: 25px;
-  /* padding-left: 15px; */
 }
 .nav a:hover,
 .nav a:focus,
@@ -161,23 +159,38 @@ img {
   font-size: 16px;
   line-height: 1.88em;
   color: var(--white-color);
-  background-color: var(--back-color-order);
+  background-color: var(--button-background-active);
   letter-spacing: 0.06em;
   padding: 10px 32px;
 }
+.button.order:hover,
+.button.order:focus {
+  background-color: var(--back-color-order);
+}
 /* WHAT WE DO */
+.what-we-do {
+  margin-top: 94px;
+}
 .heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17em;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  text-align: center;
+  padding-bottom: 50px;
 }
 .img-list {
   display: flex;
   flex-direction: row;
 }
+.img-list > li:not(:last-child) {
+  margin-right: 30px;
+}
 /* Section  advantages */
+.our-advantages {
+  margin-top: 94px;
+}
 .caption-title {
   font-weight: 700;
   font-size: 14px;
@@ -188,8 +201,23 @@ img {
 .caption-title pre::first-letter {
   text-transform: uppercase;
 }
-
+.advantages {
+  display: flex;
+  flex-direction: row;
+  flex-basis: calc(100% / 4);
+}
+.advantages > li:not(:last-child) {
+  margin-right: 30px;
+}
 /* Наша команда */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-team {
+  background-color: var(--button-background);
+  margin-top: 94px;
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -201,8 +229,6 @@ img {
   font-size: 16px;
   line-height: 1.88em;
   text-align: center;
-
-  /* flex-basis: calc(100% / 4); */
 }
 .name {
   font-weight: 500;
@@ -211,15 +237,11 @@ img {
 .our-team .heading {
   text-align: center;
 }
-.item * {
-  outline: 1px solid rebeccapurple;
-}
 /* PORTFOLIO */
 .our-products {
   margin-left: auto;
   margin-right: auto;
 }
-
 .products-list,
 .title {
   font-size: 18px;
@@ -245,7 +267,6 @@ img {
 .link:focus {
   color: var(--active-color);
 }
-
 /* Products list */
 .products-list {
   font-size: 16px;
@@ -261,12 +282,18 @@ img {
 .foot {
   background-color: var(--back-dark);
   color: var(--white-color);
+  display: flex;
+  margin-bottom: 0;
 }
 .contacts-list-foot > li {
   font-style: normal;
 }
+.contacts-list-foot {
+  padding-top: 20px;
+}
 .contacts-list-foot .link {
   color: var(--foot-contact-text);
+  padding-top: 9px;
 }
 .contacts-list-foot a:hover,
 .contacts-list-foot a:focus {
