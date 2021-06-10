@@ -55,6 +55,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 /* HEDER STYLES */
 .head {
@@ -178,7 +179,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .img-list {
   display: flex;
@@ -210,25 +211,34 @@ img {
   margin-right: 30px;
 }
 /* Наша команда */
-.team {
+/* .team {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 .our-team {
   background-color: var(--button-background);
   margin-top: 94px;
+  padding: 94px 15px;
 }
 .team-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -45px;
+  margin-top: -30px;
 }
-.team-list > li:not(:last-child) {
+/* .team-list > li:not(:last-child) {
   margin-right: 30px;
-}
+} */
 .team-list > .item {
   font-size: 16px;
   line-height: 1.88em;
   text-align: center;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 45;
+  margin-top: 30;
 }
 .name {
   font-weight: 500;
@@ -284,7 +294,15 @@ img {
   color: var(--white-color);
   display: flex;
   margin-bottom: 0;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+/* .foot-logo {
+  padding: 0;
+  margin: 0;
+} */
 .contacts-list-foot > li {
   font-style: normal;
 }
