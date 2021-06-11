@@ -149,8 +149,7 @@ img {
   text-align: center;
   justify-content: center;
   width: 696px;
-  margin-top: 0;
-  margin-bottom: 30px;
+  /* margin-top: 0; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -176,6 +175,14 @@ img {
   background-color: var(--button-background-active);
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  /* margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.hero-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 .button.order:hover,
 .button.order:focus {
@@ -224,25 +231,30 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  /* margin-left: -30px;
-  margin-top: -30px; */
+  margin-left: -30px;
+  /* margin-top: -30px; */
+}
+.card-adv-content {
 }
 .advantages > .advantegs-item {
-  flex-basis: calc(100% / 4);
-  /* margin-left: 30px;
-  margin-top: 30px; */
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  /* margin-top: 30px; */
+}
+.card-adv-text {
+  margin-top: 10px;
 }
 
 /* Наша команда */
-/* .team {
+.teams {
   padding-top: 94px;
   padding-bottom: 94px;
-} */
+}
 .our-team {
   background-color: var(--button-background);
   /* margin-top: 94px; */
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
 }
 .team-list {
   padding: 0;
@@ -250,8 +262,8 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -45px;
-  margin-top: -30px;
+  /* margin-left: -45px;
+  margin-top: -30px; */
 }
 /* .team-list > li:not(:last-child) {
   margin-right: 30px;
@@ -261,8 +273,8 @@ img {
   line-height: 1.88em;
   text-align: center;
   flex-basis: calc(100% / 4 - 30px);
-  margin-left: 45;
-  margin-top: 30;
+  /* margin-left: 45;
+  margin-top: 30; */
 }
 .name {
   font-weight: 500;
