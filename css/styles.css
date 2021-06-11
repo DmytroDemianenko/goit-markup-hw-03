@@ -10,6 +10,8 @@
   --back-dark: #2f303a;
   --foot-contact-text: rgba(255, 255, 255, 0.6);
   --back-color-order: #188ce8;
+  --card-set-gap: 30px;
+  --card-content-bc: #eeeeee;
 }
 * {
   margin: 0;
@@ -26,10 +28,14 @@ body {
 }
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 ul {
   list-style: none;
@@ -49,14 +55,17 @@ h6 {
   color: var(--title-color);
   margin: 0;
 }
+
 p {
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 /* HEDER STYLES */
 .head {
   display: flex;
@@ -124,6 +133,10 @@ img {
   margin-right: 50px;
 }
 /* HERO SECTION  */
+.main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .hero {
   background-color: var(--back-dark);
   height: 600px;
@@ -169,8 +182,12 @@ img {
   background-color: var(--back-color-order);
 }
 /* WHAT WE DO */
-.what-we-do {
+/* .what-we-do {
   margin-top: 94px;
+} */
+.what-we-do {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .heading {
   font-weight: 700;
@@ -188,10 +205,8 @@ img {
 .img-list > li:not(:last-child) {
   margin-right: 30px;
 }
-/* Section  advantages */
-.our-advantages {
-  margin-top: 94px;
-}
+/* SECTION ADVANTAGES */
+
 .caption-title {
   font-weight: 700;
   font-size: 14px;
@@ -203,13 +218,21 @@ img {
   text-transform: uppercase;
 }
 .advantages {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* margin-left: -30px;
+  margin-top: -30px; */
+}
+.advantages > .advantegs-item {
   flex-basis: calc(100% / 4);
+  /* margin-left: 30px;
+  margin-top: 30px; */
 }
-.advantages > li:not(:last-child) {
-  margin-right: 30px;
-}
+
 /* Наша команда */
 /* .team {
   padding-top: 94px;
@@ -217,8 +240,9 @@ img {
 } */
 .our-team {
   background-color: var(--button-background);
-  margin-top: 94px;
-  padding: 94px 15px;
+  /* margin-top: 94px; */
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .team-list {
   padding: 0;
@@ -248,13 +272,40 @@ img {
   text-align: center;
 }
 /* PORTFOLIO */
-.our-products {
+.products-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+  /* outline: 1px solid red; */
+}
+.products-list > .products-list-item {
+  /* outline: 1px dotted blue; */
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+/* .products-list-item * {
+  outline: 1px solid blue;
+} */
+/* .our-products {
   margin-left: auto;
   margin-right: auto;
-}
-.products-list,
-.title {
+} */
+.card-title {
   font-size: 18px;
+  /* margin-top: 20px; */
+}
+.card-text {
+  margin-top: 4px;
+}
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid var(--card-content-bc);
+  border-bottom: 1px solid var(--card-content-bc);
+  border-left: 1px solid var(--card-content-bc);
 }
 /* Button */
 .button {
