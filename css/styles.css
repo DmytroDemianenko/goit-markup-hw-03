@@ -149,7 +149,6 @@ img {
   text-align: center;
   justify-content: center;
   width: 696px;
-  /* margin-top: 0; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -175,9 +174,6 @@ img {
   background-color: var(--button-background-active);
   letter-spacing: 0.06em;
   padding: 10px 32px;
-  /* margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 .hero-button {
   display: flex;
@@ -189,9 +185,7 @@ img {
   background-color: var(--back-color-order);
 }
 /* WHAT WE DO */
-/* .what-we-do {
-  margin-top: 94px;
-} */
+
 .what-we-do {
   padding-top: 0;
   padding-bottom: 0;
@@ -203,11 +197,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
-  margin-bottom: 50px;
 }
 .img-list {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
 }
 .img-list > li:not(:last-child) {
   margin-right: 30px;
@@ -230,11 +224,7 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-
   margin-left: -30px;
-  /* margin-top: -30px; */
-}
-.card-adv-content {
 }
 .advantages > .advantegs-item {
   flex-basis: calc(100% / 4 - 30px);
@@ -247,14 +237,15 @@ img {
 
 /* Наша команда */
 .teams {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 .our-team {
   background-color: var(--button-background);
-  /* margin-top: 94px; */
-  /* padding-right: 15px;
-  padding-left: 15px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.item {
+  background-color: var(--white-color);
 }
 .team-list {
   padding: 0;
@@ -262,23 +253,31 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: -45px;
-  margin-top: -30px; */
+  margin-left: -30px;
+  margin-top: -30px;
 }
-/* .team-list > li:not(:last-child) {
-  margin-right: 30px;
-} */
+.our-teams {
+  margin-bottom: 50px;
+}
+
 .team-list > .item {
   font-size: 16px;
-  line-height: 1.88em;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
   text-align: center;
   flex-basis: calc(100% / 4 - 30px);
-  /* margin-left: 45;
-  margin-top: 30; */
+  margin-left: 30px;
+  margin-top: 30px;
 }
-.name {
-  font-weight: 500;
+.card-team-content {
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card-team-text {
+  padding-top: 10px;
+}
+.card-team-name {
+  font-weight: 500;
 }
 .our-team .heading {
   text-align: center;
@@ -291,7 +290,6 @@ img {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-  /* outline: 1px solid red; */
 }
 .products-list > .products-list-item {
   /* outline: 1px dotted blue; */
@@ -299,16 +297,8 @@ img {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
-/* .products-list-item * {
-  outline: 1px solid blue;
-} */
-/* .our-products {
-  margin-left: auto;
-  margin-right: auto;
-} */
 .card-title {
   font-size: 18px;
-  /* margin-top: 20px; */
 }
 .card-text {
   margin-top: 4px;
@@ -319,7 +309,13 @@ img {
   border-bottom: 1px solid var(--card-content-bc);
   border-left: 1px solid var(--card-content-bc);
 }
-/* Button */
+/* PORTFOLIO BUTTON */
+.button-list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 34px;
+  justify-content: center;
+}
 .button {
   font-family: inherit;
   font-weight: 500;
@@ -329,18 +325,16 @@ img {
   background-color: var(--button-background);
   min-width: 73px;
   border: 0px;
+  padding: 6px 22px;
 }
-.button:hover,
-.button:focus {
-  color: var(--white-color);
+.products-button:not(:last-child) {
+  margin-right: 8px;
+}
+.sellect-but {
   background-color: var(--button-background-active);
-  cursor: pointer;
 }
-.link:hover,
-.link:focus {
-  color: var(--active-color);
-}
-/* Products list */
+
+/* PRODUCTS LIST */
 .products-list {
   font-size: 16px;
   line-height: 1.88em;
@@ -357,15 +351,11 @@ img {
   color: var(--white-color);
   display: flex;
   margin-bottom: 0;
-  /* align-items: flex-start; */
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* .foot-logo {
-  padding: 0;
-  margin: 0;
-} */
+
 .contacts-list-foot > li {
   font-style: normal;
 }
