@@ -355,7 +355,9 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.foot-logo {
+  padding: 0;
+}
 .contacts-list-foot > li {
   font-style: normal;
 }
