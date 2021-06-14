@@ -28,14 +28,14 @@ body {
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
 }
 ul {
   list-style: none;
@@ -54,6 +54,7 @@ h5,
 h6 {
   color: var(--title-color);
   margin: 0;
+  list-style: none;
 }
 
 p {
@@ -71,6 +72,8 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 0;
+}
+.header {
   border-bottom: 1px solid #ececec;
 }
 .nav-list {
@@ -134,11 +137,9 @@ img {
 }
 /* HERO SECTION  */
 .main {
-  padding-top: 0;
-  padding-bottom: 0;
+  background-color: var(--back-dark);
 }
 .hero {
-  background-color: var(--back-dark);
   height: 600px;
 }
 .main-title {
@@ -174,6 +175,7 @@ img {
   background-color: var(--button-background-active);
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  cursor: pointer;
 }
 .hero-button {
   display: flex;
@@ -184,28 +186,7 @@ img {
 .button.order:focus {
   background-color: var(--back-color-order);
 }
-/* WHAT WE DO */
 
-.what-we-do {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17em;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  text-align: center;
-}
-.img-list {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-}
-.img-list > li:not(:last-child) {
-  margin-right: 30px;
-}
 /* SECTION ADVANTAGES */
 
 .caption-title {
@@ -229,19 +210,41 @@ img {
 .advantages > .advantegs-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  /* margin-top: 30px; */
 }
 .card-adv-text {
   margin-top: 10px;
 }
+.our-advantages {
+  border-top: 94px;
+}
+
+/* WHAT WE DO */
+
+.what-we-do {
+}
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+}
+.img-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.img-list > li:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Наша команда */
 .teams {
+  background-color: var(--button-background);
   padding-bottom: 0;
 }
 .our-team {
-  background-color: var(--button-background);
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .item {
@@ -256,6 +259,10 @@ img {
   margin-left: -30px;
   margin-top: -30px;
 }
+.card-team-thumb {
+  display: block;
+  max-width: 100%;
+}
 .our-teams {
   margin-bottom: 50px;
 }
@@ -265,13 +272,14 @@ img {
   line-height: 1.19em;
   letter-spacing: 0.03em;
   text-align: center;
-  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  width: auto;
+  border: none;
 }
 .card-team-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .card-team-text {
   padding-top: 10px;
@@ -316,6 +324,11 @@ img {
   margin-bottom: 34px;
   justify-content: center;
 }
+.products-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button {
   font-family: inherit;
   font-weight: 500;
@@ -326,12 +339,15 @@ img {
   min-width: 73px;
   border: 0px;
   padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .products-button:not(:last-child) {
   margin-right: 8px;
 }
 .sellect-but {
   background-color: var(--button-background-active);
+  color: var(--white-color);
 }
 
 /* PRODUCTS LIST */
@@ -346,14 +362,24 @@ img {
   letter-spacing: 0.06em;
 }
 /* FOOTER */
-.foot {
+.footer {
+  max-width: 1600px;
   background-color: var(--back-dark);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.foot {
   color: var(--white-color);
   display: flex;
-  margin-bottom: 0;
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.logo-link-foot {
+  padding: 0;
+  margin-top: 60px;
 }
 .foot-logo {
   padding: 0;
