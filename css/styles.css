@@ -32,10 +32,9 @@ body {
   margin-right: auto;
 }
 .section {
-  padding: 94px 15px;
+  padding: 94px 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
 }
 ul {
   list-style: none;
@@ -118,11 +117,14 @@ img {
 }
 .contacts-list {
   line-height: 1.14em;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
   margin-left: auto;
+  padding-left: 0;
 }
 .contacts-list-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
   font-style: normal;
   color: inherit;
   padding-top: 32px;
@@ -138,10 +140,10 @@ img {
 /* HERO SECTION  */
 .main {
   background-color: var(--back-dark);
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
-.hero {
-  height: 600px;
-}
+
 .main-title {
   color: var(--white-color);
   font-size: 44px;
@@ -152,7 +154,6 @@ img {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
 }
 .hero .main-title,
 .advantages .caption-title {
@@ -220,8 +221,6 @@ img {
 
 /* WHAT WE DO */
 
-.what-we-do {
-}
 .heading {
   font-weight: 700;
   font-size: 36px;
@@ -238,15 +237,14 @@ img {
 .img-list > li:not(:last-child) {
   margin-right: 30px;
 }
-
+.what-we-do {
+  padding-bottom: 94px;
+}
 /* Наша команда */
 .teams {
   background-color: var(--button-background);
-  padding-bottom: 0;
 }
-.our-team {
-  padding-bottom: 94px;
-}
+
 .item {
   background-color: var(--white-color);
 }
@@ -278,8 +276,7 @@ img {
   border: none;
 }
 .card-team-content {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 30px;
 }
 .card-team-text {
   padding-top: 10px;
@@ -363,10 +360,8 @@ img {
 }
 /* FOOTER */
 .footer {
-  max-width: 1600px;
   background-color: var(--back-dark);
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 60px 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -374,8 +369,6 @@ img {
   color: var(--white-color);
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .logo-link-foot {
   font-family: var(--accent-font);
