@@ -241,6 +241,7 @@ img {
 }
 .what-we-do {
   padding-bottom: 94px;
+  padding-top: 0;
 }
 /* Наша команда */
 .teams {
@@ -281,7 +282,7 @@ img {
   padding: 30px;
 }
 .card-team-text {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .card-team-name {
   font-weight: 500;
@@ -319,7 +320,7 @@ img {
 .button-list {
   display: flex;
   flex-direction: row;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -387,11 +388,12 @@ img {
   font-style: normal;
 }
 .contacts-list-foot {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .contacts-list-foot .link {
+  display: inline-block;
   color: var(--foot-contact-text);
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .contacts-list-foot a:hover,
 .contacts-list-foot a:focus {
