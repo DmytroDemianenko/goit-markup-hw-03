@@ -188,6 +188,7 @@ img {
 .button.order:hover,
 .button.order:focus {
   background-color: var(--back-color-order);
+  cursor: pointer;
 }
 
 /* SECTION ADVANTAGES */
